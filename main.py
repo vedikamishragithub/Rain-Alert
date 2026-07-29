@@ -24,7 +24,7 @@ message = ""
 for forecast in weather_data["list"]:
     weather = forecast["weather"][0]["id"]
 
-    if 200 <= weather_id < 600:
+    if 200 <= weather < 600:
         message = "Bring an umbrella ☔-test"
         break
 

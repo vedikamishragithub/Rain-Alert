@@ -19,7 +19,7 @@ response = requests.get(url_weather, params=params)
 response.raise_for_status()
 weather_data = response.json()
 
-message = ""
+message = "✅ Hello from GitHub Actions!"
 
 for forecast in weather_data["list"]:
     weather = forecast["weather"][0]["id"]
